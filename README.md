@@ -31,9 +31,18 @@ virtualenv MHDTurbPy
  source MHDTurbPy/bin/activate
  ```
 
-Install the required packages from your environment file: 
+Install the required packages from your environment file. Don't forget to change the path to your downloaded .txt file: 
 ```bash
-pip install -r environment.txt
+pip install -r path/to/file/filtered_requirements.txt
+ ```
+ 
+ To continue installing packages even if some fail, you can use a bash loop to try installing each package individually. This way, even if one package fails to install, the loop will proceed to the next package in the list. 
+ 
+```bash
+while read p; do
+    pip install "$p" || echo "Failed to install $p"
+done < path/to/file/filtered_requirements.txt
+
  ```
 
  - Download the package
