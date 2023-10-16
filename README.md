@@ -20,8 +20,7 @@ Additional functions and documentation will be added soon.
 
 # Installation
 
- Create conda enviroment
-  
+
  Install virtualenv using pip:
 ```bash
  pip install virtualenv
