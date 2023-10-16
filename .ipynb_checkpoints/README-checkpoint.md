@@ -19,7 +19,8 @@ Additional functions and documentation will be added soon.
 
 
 # Installation
-  - create conda enviroment
+
+ Create conda enviroment
   
  Install virtualenv using pip:
 ```bash
